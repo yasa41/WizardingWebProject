@@ -1,0 +1,628 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Playfair Display", serif;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("https://i.pinimg.com/736x/19/f9/5f/19f95fb33a9e38b037b0240fe6dae0c1.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 70px;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: #e2cf91;
+  text-decoration: none;
+  font-size: 15px;
+}
+.nav-links ul li a:hover {
+  color: #f9d371;
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+
+  background: #f9d371;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+.text-box {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  text-align: center;
+}
+.text-box h1 {
+  font-size: 62px;
+  color: #ffffe0;
+}
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: #e6e6e6;
+}
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.hero-btn:hover {
+  border: 1px solid #d4af37;
+  background: #d4af37;
+  box-shadow: 0 0 20px #d4af37, 0 0 40px #d4af37;
+  transition: 0.6s;
+}
+/*--------course---------*/
+.course {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+.course-row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.course-row a {
+  text-decoration: none;
+  display: block;
+  flex-basis: 31%;
+  background: #f3f0d9;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  color: inherit;
+}
+.course-row a:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  background: #fff9e0;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.course-col p {
+  text-align: justify;
+}
+
+/*---------house-------*/
+
+.house {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.house-row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.house-col {
+  flex-basis: 36%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.house-col img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.house-col:nth-child(1) .layer:hover {
+  background: rgba(127, 9, 9, 0.7); /* Gryffindor Scarlet */
+}
+
+.house-col:nth-child(2) .layer:hover {
+  background: rgba(255, 204, 0, 0.7); /* Hufflepuff Gold */
+}
+
+.house-col:nth-child(3) .layer:hover {
+  background: rgba(14, 26, 64, 0.7); /* Ravenclaw Blue */
+}
+
+.house-col:nth-child(4) .layer:hover {
+  background: rgba(42, 98, 61, 0.7); /* Slytherin Green */
+}
+
+.layer h3 {
+  width: 100px;
+  font-weight: 500;
+  color: #f5f5f5;
+  font-size: 20px;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+.layer:hover h3 {
+  bottom: 50%;
+  opacity: 1;
+}
+.house-card-link {
+  text-decoration: none;
+  display: block;
+ 
+}
+
+/*---------facilities-------*/
+.facilities {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.facilities-col {
+  flex-basis: 30%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.facilities-col img {
+  width: 100%;
+  border-radius: 10px;
+  height: 300px;
+  object-fit: cover;
+}
+.facilities-col p {
+  padding: 0;
+  text-align: left;
+}
+.facilities-col h3 {
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+/*------testimonials section----------*/
+.testimonials {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.testimonials-col {
+  flex-basis: 44%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  background: #f3f0d9;
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
+}
+.testimonials-col img {
+  height: 50px;
+  margin-left: 5px;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+.testimonials-col p {
+  padding: 0;
+}
+.testimonials-col h3 {
+  margin-top: 15px;
+  text-align: left;
+}
+.testimonials p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+.testimonials-col .fas,
+.far {
+  color: #d4af37;
+}
+/*------call to action-------*/
+.cta {
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(https://i.pinimg.com/736x/4e/78/87/4e78870ddcb3426ca90956664088da19.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+}
+.cta h1 {
+  color: #f5f5f5;
+  margin-bottom: 40px;
+  padding: 0;
+}
+/*--------footer---------*/
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+.footer h4 {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.icons {
+  color: #d4af37;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+
+/*-----------about-page-----------*/
+.sub-header {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("https://i.pinimg.com/736x/60/8d/06/608d06c9159b52b7713c3b082a1c7776.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #ffffe0;
+}
+.sub-header h1 {
+  margin-top: 100px;
+}
+.about-us {
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+.about-col {
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+.about-col img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.about-col h1 {
+  padding-top: 0;
+}
+.about-col p {
+  padding: 15px 0 25px;
+}
+.golden-btn {
+  border: 1px solid #d4af37;
+  background: transparent;
+  color: #d4af37;
+}
+.golden-btn:hover {
+  color: #e6e6e6;
+}
+/*-----------login-page-----------*/
+.login {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("https://i.pinimg.com/736x/b0/3a/54/b03a54fc32dbbeaf0db80e9250afe3ed.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.login-form {
+  margin: auto;
+  width: 400px;
+  padding: 40px;
+}
+.glass-effect {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 32px;
+}
+.login-form h2 {
+  color: #ffffe0;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+.login-form label,
+input {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  color: #ffffe0;
+}
+
+input[type="text"],
+input[type="password"] {
+  outline: none;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  color: #ffffe0;
+  padding: 10px;
+  font-size: 12px;
+}
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.forgot-link {
+  color: #e6e6e6;
+  text-decoration: none;
+
+  font-size: 12px;
+}
+.forgot-link:hover {
+  color: #f9d371;
+}
+input[type="submit"] {
+  width: 100%;
+  background: #f9d371;
+  color: #333;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 40px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="submit"]:hover {
+  background: #f8c256;
+  color: #000;
+  transform: translateY(-4px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*---gryffindor page----*/
+.house-header{
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #ffffe0;
+}
+.gryffindor-bg{
+  background-image:linear-gradient(rgba(49, 15, 15, 0.702), rgba(53, 20, 20, 0.7)),
+  url("https://i.pinimg.com/736x/ce/c3/44/cec3442733a571ed34d902679d4b5820.jpg");
+}
+
+.gryffindor-text-box {
+  width: 90%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  text-align: center;
+}
+.gryffindor-text-box h1 {
+  font-size: 62px;
+  color: #f9d371;
+}
+.gold-out
+{
+  color:  #edd495;
+  border-color: #edd495;
+}
+.gold-out:hover{
+  color:  #ffffff;
+}
+.gryffindor-house-bg{
+  background-color:  #fdf1dc ;
+}
+.gryffindor-divider {
+  background-color: #a00000; 
+  text-align: center;
+  padding: 100px; 
+}
+.gryffindor-divider h1 {
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #ffd97a; 
+}
+/*---slytherin page----*/
+
+.slytherin-bg{
+  background-image:linear-gradient(rgba(10, 189, 10, 0.058), rgba(25, 60, 30, 0.8))
+  ,
+  url("https://i.pinimg.com/736x/ca/9c/ef/ca9ceffdd27ec4e0b30dfabc4d26ae33.jpg");
+}
+.slytherin-house-bg{
+  background-color:  #f5ede0 ;
+}
+.slytherin-text-box {
+  width: 90%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  text-align: center;
+}
+.slytherin-text-box h1 {
+  font-size: 62px;
+  color: #f9d371;
+}
+.slytherin-divider {
+  background-color: #136207; 
+  text-align: center;
+  padding: 100px; 
+}
+.slytherin-divider h1 {
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #ffd97a; 
+}
+
+/*---hufflepuff page----*/
+
+.hufflepuff-bg{
+  background-image:linear-gradient(rgba(62, 52, 18, 0.8), rgba(206, 150, 54, 0.393))
+  ,
+  url("https://i.pinimg.com/736x/ca/82/fc/ca82fcf00f191867f1e5fe300b3198a3.jpg");
+}
+.hufflepuff-house-bg{
+  background-color:  #f5ede0 ;
+}
+.hufflepuff-text-box {
+  width: 90%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  text-align: center;
+}
+.hufflepuff-text-box h1 {
+  font-size: 62px;
+  color: #f8f3bb;
+}
+.hufflepuff-divider {
+  background-color: #f5d717c4; 
+  text-align: center;
+  padding: 100px; 
+}
+.hufflepuff-divider h1 {
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #333333; 
+}
+.hufflepuff-nav-links ul li a {
+  color:  #f8f3bb;
+  font-weight: 500;
+}
+.hufflepuff-nav-links ul li a:hover {
+  color:  #e0d669;
+}
+.hufflepuff-nav-links ul li::after {
+    background:  #0A0A0A;
+}
+.black-out
+{
+  color:  #f8f3bb;
+  font-weight: 500;
+  border-color: #f8f3bb;
+border: 2.3px solid;
+}
+.black-out:hover{
+  color:  #ffffff;
+  
+}
+/*---ravenclaw page----*/
+
+.ravenclaw-bg{
+  background-image:linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7))
+  ,
+  url("https://i.pinimg.com/736x/72/08/28/720828bdcc1894eee6e522ad3d6c5e7e.jpg");
+}
+.ravenclaw-house-bg{
+  background-color:  #f5ede0 ;
+}
+.ravenclaw-text-box {
+  width: 90%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  text-align: center;
+}
+.ravenclaw-text-box h1 {
+  font-size: 62px;
+  color: #f9d371;
+}
+.ravenclaw-divider {
+  background-color: #031c65; 
+  text-align: center;
+  padding: 100px; 
+}
+.ravenclaw-divider h1 {
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #f9d371; 
+}
+/*----------events page-----------*/
+.events-divider {
+  background-color: #132149; 
+  text-align: center;
+  color: #f9d371;
+  padding: 60px; 
+}
+.events-divider p{
+  font-size: 20px;
+}

@@ -1,0 +1,14 @@
+Gradient:rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7);
+nav links: #e2cf91;
+nav links hover: #f9d371;
+hogwarts text: #ffffe0;
+sub text: #e6e6e6;
+button glow,fas,far,icons : #d4af37;
+course-cards,testimonials-cards: #f3f0d9;
+course cards hover: #fff9e0;
+Gryffindor Scarlet : rgba(127, 9, 9, 0.7);
+Hufflepuff Gold:  rgba(255, 204, 0, 0.7);
+Ravenclaw Blue : rgba(14, 26, 64, 0.7);
+Slytherin Green: rgba(42, 98, 61, 0.7);
+layer-text,cta-text : #f5f5f5;
+

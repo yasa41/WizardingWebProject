@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Quiz</title>
+    <link href="quiz.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="quiz-body">
+    <section class="quiz-header">
+      <a href="home.html"
+        ><img src="./Images/hogwarts logo.png" alt="logo"
+      /></a>
+      <div class="quiz-buttons">
+        <input type="button" value="reset" />
+       <a href="home.html"> <input type="button" value="quit" /></a>
+      </div>
+    </section>
+    <div class="quiz-container">
+      <h1>⚡ SORTING HAT ⚡</h1>
+      <form id="sortingHatQuiz">
+        <fieldset class="quiz-item">
+          <legend>1. What do you value most?</legend>
+          <label
+            ><input type="radio" name="q1" value="ravenclaw" /> Wisdom
+          </label>
+          <label
+            ><input type="radio" name="q1" value="hufflepuff" /> Loyalty
+          </label>
+          <label
+            ><input type="radio" name="q1" value="slytherin" /> Ambition
+          </label>
+          <label
+            ><input type="radio" name="q1" value="gryffindor" /> Bravery
+          </label>
+        </fieldset>
+
+        <fieldset class="quiz-item">
+          <legend>2. Which magical subject excites you the most?</legend>
+          <label
+            ><input type="radio" name="q2" value="hufflepuff" /> Herbology
+          </label>
+          <label
+            ><input type="radio" name="q2" value="gryffindor" /> Defense Against
+            the Dark Arts
+          </label>
+          <label
+            ><input type="radio" name="q2" value="slytherin" /> Potions
+          </label>
+          <label
+            ><input type="radio" name="q2" value="ravenclaw" /> Charms
+          </label>
+        </fieldset>
+
+        <fieldset class="quiz-item">
+          <legend>3. What would you bring to Hogwarts?</legend>
+          <label
+            ><input type="radio" name="q3" value="slytherin" /> A cunning
+            strategy book
+          </label>
+          <label
+            ><input type="radio" name="q3" value="gryffindor" /> A sword
+          </label>
+          <label
+            ><input type="radio" name="q3" value="hufflepuff" /> A magical plant
+            guide
+          </label>
+          <label
+            ><input type="radio" name="q3" value="ravenclaw" /> A collection of
+            ancient spells
+          </label>
+        </fieldset>
+
+        <fieldset class="quiz-item">
+          <legend>4. Which magical creature would you befriend?</legend>
+          <label
+            ><input type="radio" name="q4" value="ravenclaw" /> Phoenix
+          </label>
+          <label
+            ><input type="radio" name="q4" value="gryffindor" /> Hippogriff
+          </label>
+          <label
+            ><input type="radio" name="q4" value="slytherin" /> Basilisk
+          </label>
+          <label
+            ><input type="radio" name="q4" value="hufflepuff" /> Niffler
+          </label>
+        </fieldset>
+
+        <fieldset class="quiz-item">
+          <legend>5. How would your friends describe you?</legend>
+          <label
+            ><input type="radio" name="q5" value="hufflepuff" /> Kind
+          </label>
+          <label
+            ><input type="radio" name="q5" value="ravenclaw" /> Clever
+          </label>
+          <label
+            ><input type="radio" name="q5" value="gryffindor" /> Courageous
+          </label>
+          <label
+            ><input type="radio" name="q5" value="slytherin" /> Determined
+          </label>
+        </fieldset>
+
+        <fieldset class="quiz-item">
+          <legend>6. Which wizarding career appeals to you?</legend>
+          <label
+            ><input type="radio" name="q6" value="slytherin" /> Ministry
+            Official
+          </label>
+          <label
+            ><input type="radio" name="q6" value="hufflepuff" /> Healer
+          </label>
+          <label
+            ><input type="radio" name="q6" value="ravenclaw" /> Spell Inventor
+          </label>
+          <label
+            ><input type="radio" name="q6" value="gryffindor" /> Auror
+          </label>
+        </fieldset>
+
+        <fieldset class="quiz-item">
+          <legend>7. What is your greatest fear?</legend>
+          <label
+            ><input type="radio" name="q7" value="hufflepuff" /> Betrayal
+          </label>
+          <label
+            ><input type="radio" name="q7" value="ravenclaw" /> Ignorance
+          </label>
+          <label
+            ><input type="radio" name="q7" value="gryffindor" /> Losing your
+            courage
+          </label>
+          <label
+            ><input type="radio" name="q7" value="slytherin" /> Failure
+          </label>
+        </fieldset>
+
+        <fieldset class="quiz-item">
+          <legend>8. What is your favorite magical activity?</legend>
+          <label
+            ><input type="radio" name="q8" value="gryffindor" /> Dueling
+          </label>
+          <label
+            ><input type="radio" name="q8" value="hufflepuff" /> Gardening
+            magical herbs
+          </label>
+          <label
+            ><input type="radio" name="q8" value="slytherin" /> Strategic games
+          </label>
+          <label
+            ><input type="radio" name="q8" value="ravenclaw" /> Learning ancient
+            spells
+          </label>
+        </fieldset>
+
+        <fieldset class="quiz-item">
+          <legend>9. How do you react in dangerous situations?</legend>
+          <label
+            ><input type="radio" name="q9" value="slytherin" /> Outwit the
+            opponent
+          </label>
+          <label
+            ><input type="radio" name="q9" value="hufflepuff" /> Protect your
+            friends
+          </label>
+          <label
+            ><input type="radio" name="q9" value="ravenclaw" /> Analyze the
+            situation
+          </label>
+          <label
+            ><input type="radio" name="q9" value="gryffindor" /> Stand and fight
+          </label>
+        </fieldset>
+
+        <fieldset class="quiz-item">
+          <legend>10. Which Hogwarts house do you admire the most?</legend>
+          <label
+            ><input type="radio" name="q10" value="ravenclaw" /> Ravenclaw
+          </label>
+          <label
+            ><input type="radio" name="q10" value="gryffindor" /> Gryffindor
+          </label>
+          <label
+            ><input type="radio" name="q10" value="hufflepuff" /> Hufflepuff
+          </label>
+          <label
+            ><input type="radio" name="q10" value="slytherin" /> Slytherin
+          </label>
+        </fieldset>
+
+        <input
+          type="submit"
+          value="Reveal My House! 🧙‍♂️"
+          onclick="sortingHatQuiz()"
+        />
+      </form>
+
+      <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
