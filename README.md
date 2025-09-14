@@ -1,4 +1,4 @@
-# Hogwarts Themed Web Pages
+# WizardingWebProject
 
 A visually engaging collection of Hogwarts-inspired web pages featuring magical houses, spells, creatures, and more. Each page is carefully styled to create an immersive experience filled with thematic imagery and layouts that bring the magic of Hogwarts to life.
 
